@@ -1,0 +1,70 @@
+.sasic-container {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.sasic-image-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+  box-sizing: border-box;
+}
+.sasic-image-block:first-child {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.sasic-image {
+  display:block;
+  vertical-align:middle;
+  box-sizing: border-box;
+}
+
+.sasic-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  width: 50px;
+  height: 50px;
+  border: 3px solid white;
+  border-radius: 25px;
+  box-shadow: 0 0 3px #222222;
+  box-sizing: border-box;
+}
+.sasic-slider:before {
+  content: "";
+  position: absolute;
+  border: 8px inset transparent; 
+  border-right: 8px solid white;
+  top: 50%;
+  margin-top: -8px;
+  left: 0;
+}
+.sasic-slider:after {
+  content: "";
+  position: absolute;
+  border: 8px inset transparent; 
+  border-left: 8px solid white;
+  top: 50%;
+  margin-top: -8px;
+  right: 0;
+}
+.sasic-slider:hover:before {
+  left: -2px; 
+  transition: 0.2s;
+}
+.sasic-slider:hover:after {
+  right: -2px; 
+  transition: 0.2s;
+}
+.sasic-slider-line {
+  position: absolute;
+  width: 50%;
+  left: 1.5px;
+  border-right: 3px solid white;
+  box-sizing: border-box;
+}
